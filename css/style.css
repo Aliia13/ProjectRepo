@@ -110,7 +110,6 @@ header {
 /* start line services*/
 
 .page-section {
-  padding: 0 12px;
   text-align: center;
 }
 
@@ -195,16 +194,8 @@ p {
   --light-color: #DFE0E1;
   --success-color: #343A40;
 }
-.container1{
-  width: 98%;
-  margin:auto;
-  height:auto;
+#team{
   background-color: var(--primary-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;;
- 
 }
 
 section .card .image{
@@ -223,7 +214,7 @@ section .card .image img{
 }
 
 .card{
-  width: 420px;
+  margin-bottom: 20px;
 }
 .card .card-content{
   display:flex;
@@ -252,6 +243,7 @@ section .card .image img{
 }
 
 .header{
+  text-align: center;
   padding:50px;
 }
 
@@ -459,12 +451,16 @@ footer {
   /* section team */
   .container-card{
     display:flex;
-    flex-direction:row;
-}
+    justify-content: space-around;
+    width: 100%;
+  }
+  .card{
+    width: 100%;
+  }
 
 .text{
     text-align:center;
-    width:55%;
+    width:70%;
     margin:auto;
     flex-wrap: nowrap;
 }

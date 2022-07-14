@@ -185,122 +185,76 @@ p {
   width: 75px;
   height: 70px;
 }
-
-/* Portfolio */
-#portfolio {
-  margin-top: 5rem;
+/* section Portfolio */
+#Portfolio{
+  padding-top: 40px;
+  background-color: #F8F9FA;
+  text-align: center;
 }
-.bg-light{
-  background-color: #f8f9fa; 
+#Portfolio .container{
+  padding: 0 12px;
 }
-.row {
+.portfolio-main-text h2{
+  text-transform: uppercase;
+  font-size:40px;
+  color: #212529;
+}
+.portfolio-boxes{
   display: flex;
   flex-wrap: wrap;
-  margin-right: -0.75rem;
 }
-.page-section h2.section-heading {
-  font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-weight: bolder;
-  padding-top: 5rem;
-}
-.page-section h3.section-subheading {
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: italic;
-  font-family:  "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin-bottom: 4rem;
-}
-#portfolio .portfolio-item{
-  max-width: 25rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-#portfolio .portfolio-item .portfolio-link {
-  position: relative;
-  display: block;
+.portfolio-box{
+  width: 100%;
   margin: 0 auto;
+  margin-bottom: 15px;
 }
-a {
-  color: #fed136;
-  text-decoration: none;
-  background-color: transparent;
+.portfolio-box-link{
+  display: block;
+  position: relative;
 }
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+.portfolio-box-hover{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  background: rgba(254, 209, 54, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity ease-in-out 0.15s;
 }
-img {
+.portfolio-box-hover:hover{
+  opacity: 1;
+}
+.plus-wrapper {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.plus {
+  font-size: 60px;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.portfolio-box-img{
+  width: 100%;
   vertical-align: middle;
-  border-style: none;
 }
-#portfolio .portfolio-item .portfolio-caption {
-  padding: 1.5rem;
-  text-align: center;
+.portfolio-inner-text{
+  padding: 20px 0;
   background-color: #fff;
 }
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+.portfolio-inner-text h3{
   font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
-  font-style: italic;
-  font-size: 1.1rem;
+.portfolio-inner-text p{
+  margin-bottom: 10px;
 }
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(254, 209, 54, 0.9);
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity ease-in-out 0.25s;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-  opacity: 1;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  font-size: 1.25rem;
-  color: #fff; 
-}
-
-svg:not(:root).svg-inline--fa {
-  overflow: visible;
-}
-.svg-inline--fa.fa-w-14 {
-  width: 0.875em;
-}
-.fa-3x {
-  font-size: 3em;
-  color: #fff; 
-}
-
-
-.image___overlay {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(254, 209, 54, 0.9);
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity ease-in-out 0.25s;
-}
-
-.image___overlay:hover{
-  opacity: 1;
-}
-
-/* Portfolio ends */
-
 
 /* section team */
 :root{
@@ -596,6 +550,21 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  /* Portfolio css */
+  #Portfolio .container {
+    padding: 0;
+  }
+  .portfolio-boxes{
+    justify-content: space-between;
+  }
+  .portfolio-box{
+    width: 48%;
+  }
+  .picture-link{
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
   .picture-link a{
     width: 48%;
     padding: 0;
@@ -686,7 +655,10 @@ footer {
   .btn {
     padding: 1.15rem 2.25rem;
   }
-
+    /* Portfolio CSS */
+    .portfolio-box{
+      width: 32%;
+    }
   
   /* section team */
   .container-card{
